@@ -30,7 +30,7 @@ public class Sheduler {
 
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
-    @Scheduled(fixedRate = 60000)
+    @Scheduled(fixedRate = 3600000)
     public void insertNewPost() {
 
         ObjectMapper mapper = new ObjectMapper();
@@ -65,7 +65,7 @@ public class Sheduler {
         System.out.println("The time is now {}"+ dateFormat.format(new Date()));
     }
 
-    @Scheduled(fixedRate = 10000)
+    @Scheduled(fixedRate = 1800000)
     public void sendNewPosts(){
         List<Post> newPosts = systemDAO.getNewPosts();
         if (newPosts != null && newPosts.size() > 0){
