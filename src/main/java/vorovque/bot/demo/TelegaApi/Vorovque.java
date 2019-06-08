@@ -110,10 +110,7 @@ public class Vorovque extends TelegramLongPollingBot {
                 }
                 System.out.println(e.getCallbackQuery().getMessage().getCaption() + " CAPTION AND TEXT "+e.getCallbackQuery().getMessage().getText());
             }
-        } else if (text.startsWith("/post")){
-            System.out.println("LLLLLLLLLLLLLLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-
-        }
+        } 
     }
 
 
