@@ -88,7 +88,7 @@ public class HttpUtil {
                 e.printStackTrace();
             } catch (NullPointerException e1) {
                   System.out.println("INPUTSTREAM (FILE BY URL) IS NULL");
-                e.printStackTrace();
+                e1.printStackTrace();
             }
         }
 
