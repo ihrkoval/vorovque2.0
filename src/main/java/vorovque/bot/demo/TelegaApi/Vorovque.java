@@ -248,12 +248,13 @@ public class Vorovque extends TelegramLongPollingBot {
                 p.getData().setText(p_text);
                 try{
                 sendPost(p,chatID, keyboard);
-                } catch (TelegramApiException e) {
+                } catch (TelegramApiException e1) {
                 p_text = p_text.replace("<","_").replace(">", "_");
                 p.getData().setText(p_text);
                 sendPost(p,chatID, keyboard);
+                     System.out.println("delete all tegs and try to repost "+p.getData().getText());
                 }
-                System.out.println("---------------------");
+               
 
 
             }
