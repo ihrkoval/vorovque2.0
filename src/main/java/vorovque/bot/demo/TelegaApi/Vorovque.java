@@ -289,7 +289,7 @@ public class Vorovque extends TelegramLongPollingBot {
                 .replace("'", "")
                 .replace("<sub>", " ")
                 .replace("<span class=\"moderator\">", "<i>")
-                .replace("</sub>", " ").replace("<sup>","sup");
+                .replace("</sub>", " ").replace("<sup>"," ").replace("</sup>"," ");
 
         return fixString;
     }
