@@ -244,17 +244,9 @@ public class Vorovque extends TelegramLongPollingBot {
                 System.out.println(mainImageUrl);
                 System.out.println(p_title);
                 System.out.println(p_text);
-                p_text = p_text.replace("<b>"," ").replace("</b>", " ");
+                p_text = p_text.replace("<","_ ").replace(">", " _");
                 p.getData().setText(p_text);
-                try{
-                sendPost(p,chatID, keyboard);
-                } catch (TelegramApiException e1) {
-                p_text = p_text.replace("<","_").replace(">", "_");
-                p.getData().setText(p_text);
-                sendPost(p,chatID, keyboard);
-                     System.out.println("delete all tegs and try to repost "+p.getData().getText());
-                }
-               
+                           
 
 
             }
