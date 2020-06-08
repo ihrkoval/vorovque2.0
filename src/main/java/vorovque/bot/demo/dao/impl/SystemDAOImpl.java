@@ -36,8 +36,11 @@ public class SystemDAOImpl implements SystemDAO {
                 " isposted INTEGER, " +
                 " insert_date DATE, " +
                 " PRIMARY KEY ( id ))";
+        
+        String cleraPosts = "delete from d3_posts_json;";
         try {
             statement.executeUpdate(sql);
+            statement.executeUpdate(cleraPosts);
         } catch (SQLException e) {
             System.out.println("ошибка инициализации БД");
             e.printStackTrace();
